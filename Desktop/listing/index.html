@@ -1,14 +1,122 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <div class="">
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <title>Listing </title>
+</head>
+<style>
+    .listing {
+        margin-top: 500px;
+    }
+
+    .right-box {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 20px;
+        border: 1px solid lightgrey;
+        border-radius: 5px;
+    }
+
+    .left-box {
+        float: left;
+        border: 1px solid lightgray;
+    }
+    .custom-control label {
+        font-size: .875rem;
+    }
+    .listing-top{
+        width: 100%;
+    }
+    .listing-ads{
+        border: lightgray 1px solid;
+    }
+    .ad-box{
+        height: 250px;
+        background: lightblue;
+    }
+    .listing-title{}
+    .listing-sorter{}
+</style>
+
+<body>
+    <div class="container mt-5 listing">
+        <div class="row">
+            <div class="col-9 left-box">
+                <div class="row">
+                    <div class="listing-top pt-4 px-2">
+                        <div class="listing-title float-left">
+                            listing title
+                        </div>
+                        <div class="listing-sorter float-right form-inline">
+                            <div class="mr-2">
+                                Trier par:
+                            </div>
+                            <div class="">
+                                <select class="form-control mr-sm-2 form-control-sm" id="inlineFormCustomSelect">
+                                    <option value="0">Default</option>
+                                    <option value="1">Nouveauté</option>
+                                    <option value="2">Prix</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="p-2 col-12">
+                        <div class="p-1 listing-ads">
+                            <div class="row">
+                                <div class="col-md-4" v-for="ad in 50">
+                                    <div class="ad-box my-2 p-2">
+                                        Advert
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="right-box p-3  text-center">
+                    <div class="my-2">
+                        <label for="basic-url">Interval de prix</label>
+                        <div class="input-group input-group-sm">
+                            <input type="text" class="form-control" placeholder="prix min">
+                            <input type="text" class="form-control" placeholder="prix max">
+                        </div>
+                    </div>
+                    <div class="text-left  border p-2 rounded">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">
+                                Avec photos uniquement
+                            </label>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <button class="btn btn-primary btn-sm btn-block">Appliquer le filtre</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script>
+        new Vue({
+            el: '.container'
+        })
+    </script>
 </body>
+
 </html>

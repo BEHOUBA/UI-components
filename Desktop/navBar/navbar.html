@@ -14,116 +14,108 @@
 </head>
 
 <body>
-    <div>
-        <header id="header">
-            <!-- premier bar de nav contenant la localite, annonces, boutiques, trocs, aide -->
-            <div class="header-top">
-                <section class="nav-section">
-                    <div id="nav-top">
-                        <span>
-                            Lieu: <span> <a href="#"><i class="fas fa-location-arrow"></i> Abidjan</a></span>
-                        </span>
-                        <a href="#">
-                            <span>
-                                Annonces
-                            </span>
-                        </a>
-                        <a href="#">
-                            <span>
-                                Boutiques
-                            </span>
-                        </a>
-                        <a href="#">
-                            <span>
-                                Trocs
-                            </span>
-                        </a>
-                        <a href="#">
-                            <span>
-                                Aide
-                            </span>
-                        </a>
-                    </div>
-                </section>
+    <!-- premier bar de nav contenant la localite, annonces, boutiques, trocs, aide -->
+    <div class="px-5">
+        <div class="header-top" class="container-fluid px-5 pb-2 page-header">
+            <div id="nav-top">
+                <span>
+                    Lieu: <span> <a href="#"><i class="fas fa-location-arrow"></i> Abidjan</a></span>
+                </span>
+                <a href="#">
+                    <span>
+                        Annonces
+                    </span>
+                </a>
+                <a href="#">
+                    <span>
+                        Boutiques
+                    </span>
+                </a>
+                <a href="#">
+                    <span>
+                        Trocs
+                    </span>
+                </a>
+                <a href="#">
+                    <span>
+                        Aide
+                    </span>
+                </a>
             </div>
-
-
-            <div id="nav-bar">
-                <section class="nav-section">
-                    <nav class="navbar navbar-expand navbar-light">
-                        <a class="navbar-brand" href="#">LOGO</a>
-                        <div class="input-group input-group-sm mx-3">
-                            <div class="input-group-prepend">
-                                <select class="btn dropdown-toggle">
-                                    <option selected="selected" value="search-alias=aps">All Departments</option>
-                                    <option value="search-alias=arts-crafts-intl-ship">Arts &amp; Crafts</option>
-                                    <option value="search-alias=automotive-intl-ship">Automotive</option>
-                                    <option value="search-alias=baby-products-intl-ship">Baby</option>
-                                    <option value="search-alias=beauty-intl-ship">Beauty &amp; Personal Care</option>
-                                    <option value="search-alias=stripbooks-intl-ship">Books</option>
-                                    <option value="search-alias=computers-intl-ship">Computers</option>
-                                    <option value="search-alias=digital-music">Digital Music</option>
-                                    <option value="search-alias=electronics-intl-ship">Electronics</option>
-                                    <option value="search-alias=digital-text">Kindle Store</option>
-                                    <option value="search-alias=instant-video">Prime Video</option>
-                                    <option value="search-alias=fashion-womens-intl-ship">Women's Fashion</option>
-                                    <option value="search-alias=fashion-mens-intl-ship">Men's Fashion</option>
-                                    <option value="search-alias=fashion-girls-intl-ship">Girls' Fashion</option>
-                                    <option value="search-alias=fashion-boys-intl-ship">Boys' Fashion</option>
-                                    <option value="search-alias=deals-intl-ship">Deals</option>
-                                    <option value="search-alias=hpc-intl-ship">Health &amp; Household</option>
-                                    <option value="search-alias=kitchen-intl-ship">Home &amp; Kitchen</option>
-                                    <option value="search-alias=industrial-intl-ship">Industrial &amp; Scientific</option>
-                                    <option value="search-alias=luggage-intl-ship">Luggage</option>
-                                    <option value="search-alias=movies-tv-intl-ship">Movies &amp; TV</option>
-                                    <option value="search-alias=music-intl-ship">Music, CDs &amp; Vinyl</option>
-                                    <option value="search-alias=pets-intl-ship">Pet Supplies</option>
-                                    <option value="search-alias=software-intl-ship">Software</option>
-                                    <option value="search-alias=sporting-intl-ship">Sports &amp; Outdoors</option>
-                                    <option value="search-alias=tools-intl-ship">Tools &amp; Home Improvement</option>
-                                    <option value="search-alias=toys-and-games-intl-ship">Toys &amp; Games</option>
-                                    <option value="search-alias=videogames-intl-ship">Video Games</option>
-                                </select>
-                            </div>
-
-                            <input type="text" class="form-control" placeholder="Recherche" aria-label="Recipient's username"
-                                aria-describedby="button-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-sm btn-outline-secondary" type="button" id="button-addon2">Trouver</button>
-                            </div>
-                        </div>
-                        <button class="btn btn-sm btn-primary">CREER UNE ANNONCE</button>
-                        <!-- <button class="btn btn-sm ml-2">SE CONNECTER</button> -->
-                        <div class="ml-3 dropdown dropleft">
-                            <a class="profile-pic dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false" data-offset="10,20"></a>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <li>
-                                    <a class="dropdown-item" href="#"><i class="fas fa-th"></i> Mes annonces</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#"><i class="fas fa-heart"></i> Mes favoris</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#"><i class="fas fa-envelope"></i>Mes messages</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#"><i class="fas fa-cog"></i>Configuration du compte</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i>Deconnexion</a>
-                                </li>
-                            </div>
-                        </div>
-                    </nav>
-                </section>
-            </div>
-        </header>
+        </div>
     </div>
+    <!--sticky navbar -->
 
+    <div class="sticky">
+        <div class="px-5 pb-1">
+            <nav class="navbar navbar-expand navbar-light">
+                <a class="navbar-brand" href="#">LOGO</a>
+                <div class="input-group input-group-sm mx-3">
+                    <div class="input-group-prepend">
+                        <select class="btn dropdown-toggle btn-outline-secondary">
+                            <option selected="selected" value="search-alias=aps">All Departments</option>
+                            <option value="search-alias=arts-crafts-intl-ship">Arts &amp; Crafts</option>
+                            <option value="search-alias=automotive-intl-ship">Automotive</option>
+                            <option value="search-alias=baby-products-intl-ship">Baby</option>
+                            <option value="search-alias=beauty-intl-ship">Beauty &amp; Personal Care</option>
+                            <option value="search-alias=stripbooks-intl-ship">Books</option>
+                            <option value="search-alias=computers-intl-ship">Computers</option>
+                            <option value="search-alias=digital-music">Digital Music</option>
+                            <option value="search-alias=electronics-intl-ship">Electronics</option>
+                            <option value="search-alias=digital-text">Kindle Store</option>
+                            <option value="search-alias=instant-video">Prime Video</option>
+                            <option value="search-alias=fashion-womens-intl-ship">Women's Fashion</option>
+                            <option value="search-alias=fashion-mens-intl-ship">Men's Fashion</option>
+                            <option value="search-alias=fashion-girls-intl-ship">Girls' Fashion</option>
+                            <option value="search-alias=fashion-boys-intl-ship">Boys' Fashion</option>
+                            <option value="search-alias=deals-intl-ship">Deals</option>
+                            <option value="search-alias=hpc-intl-ship">Health &amp; Household</option>
+                            <option value="search-alias=kitchen-intl-ship">Home &amp; Kitchen</option>
+                            <option value="search-alias=industrial-intl-ship">Industrial &amp; Scientific</option>
+                            <option value="search-alias=luggage-intl-ship">Luggage</option>
+                            <option value="search-alias=movies-tv-intl-ship">Movies &amp; TV</option>
+                            <option value="search-alias=music-intl-ship">Music, CDs &amp; Vinyl</option>
+                            <option value="search-alias=pets-intl-ship">Pet Supplies</option>
+                            <option value="search-alias=software-intl-ship">Software</option>
+                            <option value="search-alias=sporting-intl-ship">Sports &amp; Outdoors</option>
+                            <option value="search-alias=tools-intl-ship">Tools &amp; Home Improvement</option>
+                            <option value="search-alias=toys-and-games-intl-ship">Toys &amp; Games</option>
+                            <option value="search-alias=videogames-intl-ship">Video Games</option>
+                        </select>
+                    </div>
 
-
-
+                    <input type="text" class="form-control" placeholder="Recherche" aria-label="Recipient's username"
+                        aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-sm btn-outline-secondary" type="button" id="button-addon2">Trouver</button>
+                    </div>
+                </div>
+                <button class="btn btn-sm btn-primary">CREER UNE ANNONCE</button>
+                <!-- <button class="btn btn-sm ml-2">SE CONNECTER</button> -->
+                <div class="ml-3 dropdown dropleft">
+                    <a class="profile-pic dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false" data-offset="10,20"></a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li>
+                            <a class="dropdown-item" href="#"><i class="fas fa-th"></i> Mes annonces</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#"><i class="fas fa-heart"></i> Mes favoris</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#"><i class="fas fa-envelope"></i>Mes messages</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#"><i class="fas fa-cog"></i>Configuration du compte</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i>Deconnexion</a>
+                        </li>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
 
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -134,16 +126,16 @@
     crossorigin="anonymous"></script>
 <script>
 
-    window.onscroll = e => {
-        if (document.documentElement.scrollTop > 40) {
-            document.getElementById('nav-bar').style.top = '0px';
-            document.getElementById('nav-top').style.display = 'none';
-            document.getElementById('nav-bar').style.position = 'fixed'
-        } else {
-            document.getElementById('nav-top').style.display = 'block';
-            document.getElementById('nav-bar').style.position = 'relative';
-        }
-    }
+    // window.onscroll = e => {
+    //     if (document.documentElement.scrollTop > 40) {
+    //         document.getElementById('nav-bar').style.top = '0px';
+    //         document.getElementById('nav-top').style.display = 'none';
+    //         document.getElementById('nav-bar').style.position = 'fixed'
+    //     } else {
+    //         document.getElementById('nav-top').style.display = 'block';
+    //         document.getElementById('nav-bar').style.position = 'relative';
+    //     }
+    // }
 </script>
 
 </html>

@@ -1,43 +1,26 @@
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+  }
 
-#header, .header_prototype {
-    z-index: 102;
-    /* position: relative; */
-}
-#header {
-    position: relative;
-    z-index: 10;
-    background: #fff;
-}
-/* .header-top {
-    background: #fff;
-    padding-top: 8px;
-    height: 96px;
-} */
-#nav-bar {
-    position: absolute;
-    min-width: 990px;
-    width: 100%;
-    top: 32px;
-    /* height: 64px; */
+/* .page-header{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 5px;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.04);
-    -webkit-transition: box-shadow 0.2s;
-    transition: box-shadow 0.2s;
-    background: #fff;
+} */
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.04);
+  }
+.navbar{
+    padding: .5rem 0rem;
 }
-
-.nav-section {
-    max-width: 1270px;
-    /* width: 100%; */
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-
 body{
-    height: 1000px;
+    height: 3000px;
 }
 
 
@@ -90,9 +73,4 @@ body{
 
 #nav-top > * {
     margin-right: 20px;
-}
-
-
-.navbar{
-    padding: .5rem 0rem;
 }
