@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">`
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Document</title>
+</head>
+<style>
+    .card-body {
+        padding: 16px;
+    }
+
+    .card-title {
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 18px;
+        color: #2d97de;
+    }
+
+    .card-price {
+        font-weight: 700;
+    }
+
+    .card-title a {
+        text-decoration: none;
+    }
+
+    .card-title a:hover {
+        color: #fee255;
+    }
+
+    .ad-location {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: .5rem;
+    }
+
+    .ad-add-favorite {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: .5rem;
+    }
+
+    .card-img-overlay {
+        padding: .5rem;
+    }
+
+    .ad-add-favorite a {
+        color: #fff;
+    }
+
+    .material-icons {
+        font-size: 26px;
+    }
+
+
+    .ad-img-container {
+        position: relative;
+        height: 206px;
+        overflow: hidden;
+    }
+
+    .ad-img-container img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .product-item-location {
+        color: #fff;
+        font-size: 14px;
+        line-height: normal;
+        position: absolute;
+        left: .5rem;
+        bottom: .5rem;
+        z-index: 2;
+        max-width: 66%;
+        background-color: rgba(0, 0, 0, .2);
+        border-radius: 2px;
+        padding: 0 3px 1px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <!-- <div class="card border-light" style="width: 250px;">
+                <div class="ad-img-container">
+                    <img class="card-img-top" src="https://cache3.youla.io/files/images/280_300/5b/b4/5bb497d0bd36c0056c54b814.jpg"
+                        alt="Card image cap">
+                    <div class="card-img-overlay">
+                        <div class="ad-add-favorite">
+                            <a href="#">
+                                <i class="material-icons">favorite_border</i>
+                            </a>
+                        </div>
+                        <div class="ad-location product-item-location">
+                            <span class="card-text">Yamoussoukro</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="#">Sony PS4 Pro 1 To + Disque</a>
+                    </h5>
+                    <span class="card-price">150.000 FCFA</span>
+                </div>
+            </div> -->
+            <!-- 
+            <div class="card mx-2" style="width: 250px;">
+                <div class="ad-img-container">
+                    <img class="card-img-top" src="https://cache3.youla.io/files/images/280_300/5b/b4/5bb497d0bd36c0056c54b814.jpg"
+                        alt="Card image cap">
+                    <div class="card-img-overlay">
+                        <div class="ad-add-favorite">
+                            <a href="#">
+                                <i class="material-icons">favorite_border</i>
+                            </a>
+                        </div>
+                        <div class="ad-location product-item-location">
+                            <span class="card-text">Yamoussoukro</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="#">Sony PS4 Pro 1 To + Disque</a>
+                    </h5>
+                    <span class="card-price">150.000 FCFA</span>
+                </div>
+            </div> -->
+
+
+
+            <div class="card" style="width: 250px;">
+                <div class="ad-img-container">
+                    <img class="card-img-top" src="https://cache3.youla.io/files/images/280_300/5b/b4/5bb497d0bd36c0056c54b814.jpg"
+                        alt="Card image cap">
+                    <div class="card-img-overlay">
+                        <div class="ad-add-favorite">
+                            <a href="#">
+                                <i class="material-icons">favorite_border</i>
+                            </a>
+                        </div>
+                        <div class="ad-location product-item-location">
+                            <span class="card-text">Yamoussoukro</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="#">Sony PS4 Pro 1 To + Disque</a>
+                    </h5>
+                    <span class="card-price">150.000 FCFA</span>
+                    <div>
+                        <small class="card-text">22 novembre 01h24</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
