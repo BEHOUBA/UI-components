@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-5" id="app">
+            <div class="col-9">
+                <table class="table tg-dashboardtable">
+                    <thead>
+                        <tr>
+                            <th>
+                                <span class="tg-checkbox">
+                                    <input id="tg-checkedall" type="checkbox" name="myads" value="checkall">
+                                    <label for="tg-checkedall"></label>
+                                </span>
+                            </th>
+                            <th>Photo</th>
+                            <th>Annonce</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr data-category="active" class="table-item" v-for="i in 10">
+                            <td data-title="">
+                                <span class="tg-checkbox">
+                                    <input id="tg-adone" type="checkbox" name="myads" value="myadone">
+                                    <label for="tg-adone"></label>
+                                </span>
+                            </td>
+                            <td data-title="Photo" class="table-image"><img src="http://exprostudio.com/html/classified/images/thumbnail/img-06.jpg"
+                                    alt="image description"></td>
+                            <td data-title="Title">
+                                <h5>A+ HP probook 6560b core i3 2nd generation</h5>
+                                <div>
+                                    <small class="text-bold">2000000 FCFA</small> <small class="text-muted"><span class="tg-adcategories">
+                                            / Laptops &amp; PCs</span></small>
+                                </div>
+                            </td>
+                            <td data-title="Ad Status">
+                                <h5> <span class="badge badge-danger">supprimé</span></h5>
+                            </td>
+                            <td data-title="Action">
+                                <div class="tg-btnsactions">
+                                    <a class="btn btn-sm btn-primary" href="javascript:void(0);"><i class="fa fa-eye"></i></a>
+                                    <a class="btn btn-sm btn-primary" href="javascript:void(0);"><i class="fa fa-edit"></i></a>
+                                    <a class="btn btn-sm btn-primary" href="javascript:void(0);"><i class="fa fa-chart-line"></i></a>
+                                    <a class="btn btn-sm btn-primary" href="javascript:void(0);"><i class="fa fa-trash"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            message: 'Hello Vue!'
+        }
+    })
+</script>
+
+</html>

@@ -11,7 +11,18 @@
     <title>Document</title>
 </head>
 <style>
-    .card-body {
+    .card1 {
+        border: none;
+    }
+
+    .card2 {}
+
+    .card3 {
+
+        box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    .card1 .card-body {
         padding: 8px 8px 1px 0px;
     }
 
@@ -65,7 +76,9 @@
         overflow: hidden;
     }
 
-
+    /* .ad-img-container:hover img {
+        opacity: 0.5;
+    } */
 
     .ad-img-container img {
         position: absolute;
@@ -100,51 +113,130 @@
 <body>
     <div class="container">
         <div class="row mt-5">
+            <div class="col-9">
+                <div class="row">
+                    <!-- first model -->
+                    <div class="col-4">
+                        <div class="card card1">
+                            <div class="ad-img-container">
+                                <a href="#">
+                                    <img class="card-img-top" src="https://cache3.youla.io/files/images/280_300/5b/b4/5bb497d0bd36c0056c54b814.jpg"
+                                        alt="Card image cap">
+                                </a>
+                                <div class="ad-add-favorite">
+                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Ajouter aux favoris">
+                                        <i class="material-icons">favorite_border</i>
+                                    </a>
+                                </div>
+                                <div class="ad-location product-item-location">
+                                    <span class="card-text">Yamoussoukro</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <a href="#">Sony PS4 Pro 1 To + Disque</a>
+                                </h5>
+                                <div>
+                                    <span class="card-price">150.000 FCFA</span>
+                                </div>
+                                <div>
+                                    <small class="text-muted">13 novembre 08:07</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="card border-light" style="width: 250px;">
-                <div class="ad-img-container">
-                    <a href="#">
-                        <img class="card-img-top" src="https://cache3.youla.io/files/images/280_300/5b/b4/5bb497d0bd36c0056c54b814.jpg"
-                            alt="Card image cap">
-                    </a>
-                    <div class="ad-add-favorite">
-                        <a href="#" data-toggle="tooltip" data-placement="top" title="Ajouter aux favoris">
-                            <i class="material-icons">favorite_border</i>
-                        </a>
+                    <!-- second model -->
+                    <div class="col-4">
+                        <div class="card card-2">
+                            <div class="ad-img-container">
+                                <a href="#">
+                                    <img class="card-img-top" src="https://cache3.youla.io/files/images/280_300/5b/b4/5bb497d0bd36c0056c54b814.jpg"
+                                        alt="Card image cap">
+                                </a>
+                                <div class="ad-add-favorite">
+                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Ajouter aux favoris">
+                                        <i class="material-icons">favorite_border</i>
+                                    </a>
+                                </div>
+                                <div class="ad-location product-item-location">
+                                    <span class="card-text">Yamoussoukro</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <a href="#">Sony PS4 Pro 1 To + Disque</a>
+                                </h5>
+                                <div>
+                                    <span class="card-price">150.000 FCFA</span>
+                                </div>
+                                <div>
+                                    <small class="text-muted">13 novembre 08:07</small>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="ad-location product-item-location">
-                        <span class="card-text">Yamoussoukro</span>
+
+                    <!-- third model -->
+                    <div class="col-4">
+                        <div class="card card3">
+                            <div class="ad-img-container">
+                                <a href="#">
+                                    <img class="card-img-top" src="https://cache3.youla.io/files/images/280_300/5b/b4/5bb497d0bd36c0056c54b814.jpg"
+                                        alt="Card image cap">
+                                </a>
+                                <div class="ad-add-favorite">
+                                    <a href="#" data-toggle="tooltip" data-placement="top" title="Ajouter aux favoris">
+                                        <i class="material-icons">favorite_border</i>
+                                    </a>
+                                </div>
+                                <div class="ad-location product-item-location">
+                                    <span class="card-text">Yamoussoukro</span>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <a href="#">Sony PS4 Pro 1 To + Disque</a>
+                                </h5>
+                                <div>
+                                    <span class="card-price">150.000 FCFA</span>
+                                </div>
+                                <div>
+                                    <small class="text-muted">13 novembre 08:07</small>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
-                <div class="card-body">
-                    <h5 class="card-title">
-                        <a href="#">Sony PS4 Pro 1 To + Disque</a>
-                    </h5>
-                    <span class="card-price">150.000 FCFA</span>
+                <div class="col-3">
+
+
                 </div>
+
+
+
+
+
+
+
             </div>
-
-
-
-
-
         </div>
-    </div>
 
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
 
-    <script>
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
-    </script>
+        <script>
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            })
+        </script>
 </body>
 
 </html>

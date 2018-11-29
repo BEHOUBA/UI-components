@@ -12,7 +12,6 @@ function palindromChecker(word) {
 }
 
 
-
 function palindromChecker2(word) {
     var i = 0;
     while (i < word.length) {
