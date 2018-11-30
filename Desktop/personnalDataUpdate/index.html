@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <title>Setting account data</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-12">
+                <form>
+                    <!-- category -->
+                    <div class="form-group row">
+                        <label for="form-category" class="col-3 col-form-label col-form-label-sm">Categorie</label>
+                        <div class="col">
+                            <select id="form-category" class="form-control form-control-sm">
+                                <option>Electroniques</option>
+                                <option>Job</option>
+                                <option>Electroniques</option>
+                                <option>Job</option>
+                                <option>Electroniques</option>
+                                <option>Job</option>
+                                <option>Electroniques</option>
+                                <option>Job</option>
+                                <option>Electroniques</option>
+                                <option>Job</option>
+                            </select>
+                            <!-- <input type="email" class="form-control form-control-sm" id="inputEmail3" placeholder="Email"> -->
+                        </div>
+                        <!-- sub-category -->
+                        <div class="col">
+                            <select id="form-category" class="form-control form-control-sm">
+                                <option>Electroniques</option>
+                                <option>Job</option>
+                                <option>Electroniques</option>
+                                <option>Job</option>
+                                <option>Electroniques</option>
+                                <option>Job</option>
+                                <option>Electroniques</option>
+                                <option>Job</option>
+                                <option>Electroniques</option>
+                                <option>Job</option>
+                            </select>
+                            <!-- <input type="email" class="form-control form-control-sm" id="inputEmail3" placeholder="Email"> -->
+                        </div>
+                    </div>
+                    <!--advert type -->
+
+                    <div class="form-group row">
+                        <label for="form-type" class="col-3 col-form-label col-form-label-sm">Type d'annonce</label>
+                        <div class="col">
+                            <select id="form-type" class="form-control form-control-sm">
+                                <option>Offre</option>
+                                <option>Demande</option>
+                                <option>Troc</option>
+                            </select>
+                            <!-- <input type="email" class="form-control form-control-sm" id="inputEmail3" placeholder="Email"> -->
+                        </div>
+                        <div class="col">
+
+                            <!-- <input type="email" class="form-control form-control-sm" id="inputEmail3" placeholder="Email"> -->
+                        </div>
+                    </div>
+
+                    <!-- title -->
+                    <div class="form-group row">
+                        <label for="form-title" class="col-3 col-form-label col-form-label-sm">Titre de l'annonce</label>
+                        <div class="col-9">
+                            <input type="text" class="form-control form-control-sm" id="form-title">
+                        </div>
+                    </div>
+
+                    <!-- detail de l'annonce -->
+
+                    <!-- description -->
+                    <div class="form-group row">
+                        <label for="form-desc" class="col-3 col-form-label col-form-label-sm">Description de
+                            l'annonce</label>
+                        <div class="col-9">
+                            <textarea class="form-control form-control-sm" id="form-desc" rows="5"></textarea>
+                        </div>
+                    </div>
+
+
+                    <!-- price -->
+                    <div class="form-group row">
+                        <label for="form-price" class="col-3 col-form-label col-form-label-sm">Prix</label>
+                        <div class="col-3">
+                            <input type="text" class="form-control form-control-sm" id="form-price">
+                        </div>
+                        <div class="custom-control custom-checkbox col-5 mt-1">
+                            <input type="checkbox" class="custom-control-input" id="form-negociable">
+                            <label class="custom-control-label" for="form-negociable"> Prix negociable</label>
+                        </div>
+                    </div>
+
+
+                    <!--addresse-->
+                    <div class="form-group row mt-2">
+                        <label for="form-location" class="col-3 col-form-label col-form-label-sm">Addresse</label>
+                        <div class="col-9">
+                            <input type="text" class="form-control form-control-sm" id="form-location">
+                        </div>
+                        <div class="col-3">
+
+                        </div>
+                        <div class="col-9">
+                            <div id="map-area">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--photos-->
+                    <div class="form-group row">
+                        <label for="form-file" class="col-3 col-form-label col-form-label-sm">Ajouter des images</label>
+                        <div class="col-9">
+                            <input type="file" id="form-file" accept="image/x-png,image/gif,image/jpeg" class="filepond"
+                                name="filepond" multiple data-max-file-size="3MB" data-max-files="5" />
+                        </div>
+                    </div>
+
+                    <div class="form-group row mt-4">
+                        <div class="col-12">
+                            <button type="button" class="btn btn-primary float-right">Publier</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
