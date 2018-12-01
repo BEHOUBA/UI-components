@@ -12,129 +12,90 @@
 
     <title>Setting account data</title>
 </head>
+<style>
+    .user-pic img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.dropdown > *, .custom-control-label {
+    font-size: .875rem;
+}
+.form-group {
+    padding-top: 1rem;
+    border-top: 1px solid lightgray;
+}
+</style>
 
 <body>
     <div class="container">
         <div class="row mt-5">
-            <div class="col-12">
-                <form>
-                    <!-- category -->
-                    <div class="form-group row">
-                        <label for="form-category" class="col-3 col-form-label col-form-label-sm">Categorie</label>
-                        <div class="col">
-                            <select id="form-category" class="form-control form-control-sm">
-                                <option>Electroniques</option>
-                                <option>Job</option>
-                                <option>Electroniques</option>
-                                <option>Job</option>
-                                <option>Electroniques</option>
-                                <option>Job</option>
-                                <option>Electroniques</option>
-                                <option>Job</option>
-                                <option>Electroniques</option>
-                                <option>Job</option>
-                            </select>
-                            <!-- <input type="email" class="form-control form-control-sm" id="inputEmail3" placeholder="Email"> -->
-                        </div>
-                        <!-- sub-category -->
-                        <div class="col">
-                            <select id="form-category" class="form-control form-control-sm">
-                                <option>Electroniques</option>
-                                <option>Job</option>
-                                <option>Electroniques</option>
-                                <option>Job</option>
-                                <option>Electroniques</option>
-                                <option>Job</option>
-                                <option>Electroniques</option>
-                                <option>Job</option>
-                                <option>Electroniques</option>
-                                <option>Job</option>
-                            </select>
-                            <!-- <input type="email" class="form-control form-control-sm" id="inputEmail3" placeholder="Email"> -->
+            <div class="col-8">
+                <div class="form-group row my-4">
+                    <label for="userName" class="col-sm-3 col-form-label col-form-label-sm">Photo de profil</label>
+                    <div class="col-3">
+                        <div class="user-pic">
+                            <img src="https://59.img.avito.st/avatar/social/256x256/4789950259.jpg" alt="">
                         </div>
                     </div>
-                    <!--advert type -->
-
-                    <div class="form-group row">
-                        <label for="form-type" class="col-3 col-form-label col-form-label-sm">Type d'annonce</label>
-                        <div class="col">
-                            <select id="form-type" class="form-control form-control-sm">
-                                <option>Offre</option>
-                                <option>Demande</option>
-                                <option>Troc</option>
-                            </select>
-                            <!-- <input type="email" class="form-control form-control-sm" id="inputEmail3" placeholder="Email"> -->
-                        </div>
-                        <div class="col">
-
-                            <!-- <input type="email" class="form-control form-control-sm" id="inputEmail3" placeholder="Email"> -->
-                        </div>
-                    </div>
-
-                    <!-- title -->
-                    <div class="form-group row">
-                        <label for="form-title" class="col-3 col-form-label col-form-label-sm">Titre de l'annonce</label>
-                        <div class="col-9">
-                            <input type="text" class="form-control form-control-sm" id="form-title">
-                        </div>
-                    </div>
-
-                    <!-- detail de l'annonce -->
-
-                    <!-- description -->
-                    <div class="form-group row">
-                        <label for="form-desc" class="col-3 col-form-label col-form-label-sm">Description de
-                            l'annonce</label>
-                        <div class="col-9">
-                            <textarea class="form-control form-control-sm" id="form-desc" rows="5"></textarea>
-                        </div>
-                    </div>
-
-
-                    <!-- price -->
-                    <div class="form-group row">
-                        <label for="form-price" class="col-3 col-form-label col-form-label-sm">Prix</label>
-                        <div class="col-3">
-                            <input type="text" class="form-control form-control-sm" id="form-price">
-                        </div>
-                        <div class="custom-control custom-checkbox col-5 mt-1">
-                            <input type="checkbox" class="custom-control-input" id="form-negociable">
-                            <label class="custom-control-label" for="form-negociable"> Prix negociable</label>
-                        </div>
-                    </div>
-
-
-                    <!--addresse-->
-                    <div class="form-group row mt-2">
-                        <label for="form-location" class="col-3 col-form-label col-form-label-sm">Addresse</label>
-                        <div class="col-9">
-                            <input type="text" class="form-control form-control-sm" id="form-location">
-                        </div>
-                        <div class="col-3">
-
-                        </div>
-                        <div class="col-9">
-                            <div id="map-area">
-
+                    <div class="col-6">
+                        <div class="dropdown">
+                            <a class="dropdown-toggle" href="#" id="changeUserPic" data-toggle="dropdown">
+                                Modifier la photo
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="changeUserPic">
+                                <a class="dropdown-item" href="#">Prendre une photo</a>
+                                <a class="dropdown-item" href="#">Telecharger une photo</a>
+                                <a class="dropdown-item" href="#">Supprimer</a>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="form-group row">
+                    <label for="userName" class="col-sm-3 col-form-label col-form-label-sm">Nom d'utilisateur</label>
+                    <div class="col-sm-9">
+                        <input type="email" class="form-control form-control-sm" id="userName" value="Manassé kouamé">
+                    </div>
+                </div>
 
-                    <!--photos-->
-                    <div class="form-group row">
-                        <label for="form-file" class="col-3 col-form-label col-form-label-sm">Ajouter des images</label>
-                        <div class="col-9">
-                            <input type="file" id="form-file" accept="image/x-png,image/gif,image/jpeg" class="filepond"
-                                name="filepond" multiple data-max-file-size="3MB" data-max-files="5" />
+                <div class="form-group row">
+                    <label for="userCity" class="col-sm-3 col-form-label col-form-label-sm">Ville actuelle</label>
+                    <div class="col-sm-9">
+                        <select class="form-control form-control-sm" id="userCity">
+                            <option selected>Abidjan</option>
+                            <option value="1">San-pedro</option>
+                            <option value="2">Yamoussoukro</option>
+                            <option value="3">Bouaké</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="form-group row">
+                    <label for="userEmail" class="col-sm-3 col-form-label col-form-label-sm">Email </label>
+                    <div class="col-sm-9">
+                        <input type="email" class="form-control form-control-sm" id="userEmail" value="behouba@gmail.com">
+                        <div class="custom-control custom-checkbox mt-2">
+                            <input type="checkbox" checked class="custom-control-input" id="notificationEmail">
+                            <label class="custom-control-label" for="notificationEmail">Recevoir des notification par
+                                email</label>
                         </div>
                     </div>
+                </div>
 
-                    <div class="form-group row mt-4">
-                        <div class="col-12">
-                            <button type="button" class="btn btn-primary float-right">Publier</button>
-                        </div>
+                <div class="form-group row">
+                    <label for="userPhone" class="col-sm-3 col-form-label col-form-label-sm">Telephone </label>
+                    <div class="col-sm-9">
+                        <input type="email" class="form-control form-control-sm" id="userPhone" value="+225 45-00-16-85">
                     </div>
-                </form>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-9">
+                        <button class="btn btn-success">Enregistrer les modifications</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
