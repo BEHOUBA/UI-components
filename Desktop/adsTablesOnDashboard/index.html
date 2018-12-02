@@ -34,7 +34,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr data-category="active" class="table-item" v-for="i in 10">
+                        <tr data-category="active" class="table-item" v-for="i in 3">
                             <td data-title="">
                                 <span class="tg-checkbox">
                                     <input id="tg-adone" type="checkbox" name="myads" value="myadone">
@@ -55,10 +55,13 @@
                             </td>
                             <td data-title="Action">
                                 <div class="tg-btnsactions">
-                                    <a class="btn btn-sm btn-primary" href="javascript:void(0);"><i class="fa fa-eye"></i></a>
-                                    <a class="btn btn-sm btn-primary" href="javascript:void(0);"><i class="fa fa-edit"></i></a>
-                                    <a class="btn btn-sm btn-primary" href="javascript:void(0);"><i class="fa fa-chart-line"></i></a>
-                                    <a class="btn btn-sm btn-primary" href="javascript:void(0);"><i class="fa fa-trash"></i></a>
+                                    <a class="btn btn-sm btn-primary" href="javascript:void(0);" data-toggle="tooltip"
+                                        data-placement="top" title="Voir l'annonce"><i class="fa fa-eye"></i></a>
+                                    <a class="btn btn-sm btn-primary" href="javascript:void(0);" data-toggle="tooltip"
+                                        data-placement="top" title="Modifier les données de l'annonce"><i class="fa fa-edit"></i></a>
+                                    <!-- <a class="btn btn-sm btn-primary" href="javascript:void(0);"><i class="fa fa-chart-line"></i></a> -->
+                                    <a class="btn btn-sm btn-primary" href="javascript:void(0);" data-toggle="tooltip"
+                                        data-placement="top" title="Supprimer cette annonce"><i class="fa fa-trash"></i></a>
                                 </div>
                             </td>
                         </tr>

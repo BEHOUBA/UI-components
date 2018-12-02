@@ -13,3 +13,9 @@
 tbody tr:hover {
     box-shadow: 0 0 15px 0 rgba(0,0,0,0.20);
 }
+.tg-btnsactions {
+    min-width: 150px;
+    width: 100%;
+    float: left;
+    margin: -5px 0;
+}

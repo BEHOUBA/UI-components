@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <title>Tableau de bord de boutique!</title>
+</head>
+
+<style>
+    /* .table td, .table th {
+    border: 1px solid #dee2e6;
+} */
+
+    .table-item h5{
+        font-size: 1rem;
+    }
+
+    .table-ad-img img{
+        width: 50px;
+        height: 50px;
+    }
+    tbody tr:hover {
+        box-shadow: 0 0 15px 0 rgba(0,0,0,0.20);
+    }
+    .dash-ad-title{
+        font-weight: 700;
+    }
+</style>
+
+<body>
+    <div class="container-fluid" id="app">
+
+        <div class="mt-5 row">
+            <div class="col-sm-9">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                    aria-controls="home" aria-selected="true">Annonces actives (12)</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                    aria-controls="profile" aria-selected="false">Annonces inactives (5)</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                                    aria-controls="contact" aria-selected="false">Annonces terminées (10)</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+                <div class="row my-4">
+                    <div class="col-sm-12">
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control form-control-sm" id="validationDefault03"
+                                    placeholder="Rechercher">
+                            </div>
+                            <!-- <div class="col-sm-2">
+                                <label for="inlineFormCustomSelectPref">Trier par: </label>
+                            </div> -->
+                            <div class="col-sm-2 mb-3">
+                                <select class="form-control form-control-sm" id="inlineFormCustomSelectPref">
+                                    <option selected>Prix</option>
+                                    <option value="1">Nombre de vue</option>
+                                    <option value="2">Favoris</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <table class="table tg-dashboardtable">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <span class="tg-checkbox">
+                                                    <input id="tg-checkedall" type="checkbox" name="myads" value="checkall">
+                                                    <label for="tg-checkedall"></label>
+                                                </span>
+                                            </th>
+                                            <th>Annonce</th>
+                                            <th>Vues</th>
+                                            <th>Favoris</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr data-category="active" class="table-item" v-for="i in 3">
+                                            <td data-title="">
+                                                <span class="tg-checkbox">
+                                                    <input id="tg-adone" type="checkbox" name="myads" value="myadone">
+                                                    <label for="tg-adone"></label>
+                                                </span>
+                                            </td>
+                                            <td data-title="Title">
+                                                <div class="float-left table-ad-img">
+                                                    <img src="http://exprostudio.com/html/classified/images/thumbnail/img-06.jpg"
+                                                        alt="image description">
+                                                </div>
+                                                <div class="float-left ml-2">
+                                                    <div class="dash-ad-title">
+                                                        A+ HP probook 6560b core i3 2nd generation
+                                                    </div>
+                                                    <div>
+                                                        <small class="text-bold">2000000 FCFA</small> <small class="text-muted"><span
+                                                                class="tg-adcategories">
+                                                                / Laptops &amp; PCs</span></small>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td data-title="Ad Status">
+                                                <h5>152</h5>
+                                            </td>
+                                            <td data-title="Ad Status">
+                                                <h5>12</h5>
+                                            </td>
+                                            <td data-title="Action">
+                                                <div class="tg-btnsactions">
+                                                    <a class="btn btn-sm btn-info" href="javascript:void(0);"
+                                                        data-toggle="tooltip" data-placement="top" title="Voir l'annonce"><i
+                                                            class="fa fa-eye"></i></a>
+
+
+                                                    <a class="btn btn-sm btn-success" href="javascript:void(0);" title="Modifier les données de l'annonce"
+                                                        data-toggle="modal" data-target="#editModal"><i class="fa fa-edit"></i></a>
+
+
+                                                    <a class="btn btn-sm btn-primary" href="javascript:void(0);"
+                                                        data-toggle="modal" data-target="#adChartModal"><i class="fa fa-chart-line"></i></a>
+
+
+                                                    <a class="btn btn-sm btn-danger" href="javascript:void(0);" title="Supprimer cette annonce"
+                                                        data-toggle="modal" data-target="#deleteModal"><i class="fa fa-trash"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+
+
+
+
+                                <!--Modals-->
+
+                                <!-- chart modal-->
+                                <div class="modal fade" id="adChartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Chart modal</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                ...
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- edit modal-->
+                                <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Edit modal</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                ...
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- delete modal-->
+                                <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Delete modal</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                ...
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+
+
+
+
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">2</div>
+                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">3</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            message: 'Hello Vue!'
+        }
+    })
+</script>
+
+</html>
