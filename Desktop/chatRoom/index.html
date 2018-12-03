@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<style>
+
+    .chat-msg-wrapper{
+        padding: 14px 16px;
+        height: 500px;
+        overflow-y: auto;
+    }
+
+
+    textarea.input-typing {
+        width: 100%;
+        padding: 5px 120px 5px 8px;
+        overflow: hidden;
+        background-color: #fff;
+        font-size: 14px;
+        vertical-align: middle;
+        color: #000;
+        margin: 0;
+        box-sizing: border-box;
+        box-shadow: inset 0 1px 1px rgba(142,142,142,.2);
+        border: 1px solid #d8d8d8;
+        border-radius: 2px;
+        display: inline-block;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        outline: 0;
+        line-height: 20px;
+        resize: none;
+    }
+
+    .msg-input-form {
+        padding: 13px 11px 11px 56px !important;
+        border: 1px solid lightgray;
+        position: relative;
+        background-color: #f7f7fa;
+    }
+
+    .send-pic {
+        position: absolute;
+        bottom: 20px;
+        left: 15px;
+        z-index: 2;
+        width: 24px;
+        height: 24px;
+    }
+    .send-btn {
+        background-color: transparent;
+        font-weight: 700;
+        line-height: 30px;
+        color: #748bf0;
+        position: absolute;
+        bottom: 14px;
+        right: 14px;
+        margin: 0;
+        padding: 0 6px;
+        height: 30px;
+        border: 0;
+        resize: none;
+    }
+    .send-btn:focus {
+        outline: none;
+    }
+    .send-btn:hover {
+        cursor: pointer;
+    }
+</style>
+
+<body>
+
+
+
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-8">
+                <div>
+                    <div class="chat-msg-wrapper">
+                        <div>
+                            <div>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facilis, sint
+                                excepturi inventore est aspernatur quisquam, similique laborum animi blanditiis nostrum
+                                libero consequatur dolore quos molestias sunt id doloribus possimus.
+                            </div>
+                            <div>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facilis, sint
+                                excepturi inventore est aspernatur quisquam, similique laborum animi blanditiis nostrum
+                                libero consequatur dolore quos molestias sunt id doloribus possimus.
+                            </div>
+                            <div>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facilis, sint
+                                excepturi inventore est aspernatur quisquam, similique laborum animi blanditiis nostrum
+                                libero consequatur dolore quos molestias sunt id doloribus possimus.
+                            </div>
+                            <div>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facilis, sint
+                                excepturi inventore est aspernatur quisquam, similique laborum animi blanditiis nostrum
+                                libero consequatur dolore quos molestias sunt id doloribus possimus.
+                            </div>
+                            <div>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facilis, sint
+                                excepturi inventore est aspernatur quisquam, similique laborum animi blanditiis nostrum
+                                libero consequatur dolore quos molestias sunt id doloribus possimus.
+                            </div>
+                            <div>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facilis, sint
+                                excepturi inventore est aspernatur quisquam, similique laborum animi blanditiis nostrum
+                                libero consequatur dolore quos molestias sunt id doloribus possimus.
+                            </div>
+                            <div>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facilis, sint
+                                excepturi inventore est aspernatur quisquam, similique laborum animi blanditiis nostrum
+                                libero consequatur dolore quos molestias sunt id doloribus possimus.
+                            </div>
+                            <div>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facilis, sint
+                                excepturi inventore est aspernatur quisquam, similique laborum animi blanditiis nostrum
+                                libero consequatur dolore quos molestias sunt id doloribus possimus.
+                            </div>
+                        </div>
+                    </div>
+                    <form class="msg-input-form">
+                        <div class="send-pic">
+                            <button type="button" class="btn btn-sm">
+                                <i class="fas fa-camera"></i>
+                            </button>
+                        </div>
+                        <textarea class="input-typing" maxlength="1000" rows="1"></textarea>
+                        <button type="button" class="send-btn" disabled>
+                            <i class="far fa-paper-plane"></i>
+                            envoyer
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+</html>
